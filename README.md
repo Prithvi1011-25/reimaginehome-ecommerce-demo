@@ -14,23 +14,6 @@ React script-embed demo for **ecommerce mode** — structured like [Otodom Integ
 
 This demo defaults to **dev** — same as Otodom Vue agentic / Vanilla script-embed.
 
-## Stage build
-
-Same app and `public_key`, pointed at the **stage** CDN + API (like Otodom Staging):
-
-| | **Stage** |
-|---|---|
-| Widget script | `stage-widget.styldod.com/widget.js` |
-| Session API | `stage-ep-api.styldod.com` |
-| Public key | `public_key` (unchanged) |
-
-```bash
-npm run dev:stage      # local stage
-npm run build:stage    # production bundle for stage
-```
-
-Vercel stage deploy uses `vercel.stage.json` (`npm run build:stage`).
-
 ## Setup
 
 ```bash

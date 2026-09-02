@@ -3,7 +3,6 @@ import { VisualizeButton } from './VisualizeButton';
 import {
   CATALOG,
   DEMO_PRODUCTS,
-  getDeployEnvLabel,
   isWidgetPublicKeyConfigured,
   type CatalogProduct,
 } from '../widgetConfig';
@@ -26,9 +25,7 @@ export function CatalogPage({
     <div className="catalog-shell">
       <header className="catalog-hero rise">
         <div className="catalog-hero__inner">
-          <p className="eyebrow">
-            ReimagineHome · Ecommerce mode · {getDeployEnvLabel()}
-          </p>
+          <p className="eyebrow">ReimagineHome · Ecommerce mode</p>
           <h1>Shop furniture, visualize before you buy</h1>
           <p className="catalog-hero__lead">{CATALOG.subtitle}</p>
 
