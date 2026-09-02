@@ -6,8 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:stage": "vite --mode stage",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "build:stage": "tsc -b && vite build --mode stage",
+    "preview": "vite preview",
+    "preview:stage": "vite preview --mode stage"
   },
   "dependencies": {
     "react": "^19.1.1",
