@@ -209,9 +209,17 @@ const widgetCallbacks = {
   },
 };
 
+/** Same CDN logo Otodom Staging passes into the widget. */
+export function buildWidgetBranding() {
+  return {
+    logo: 'https://ecdn.styldod.com/assets/logo/6a2bca9bce2a355c2c13d058.svg',
+  };
+}
+
 export function buildWidgetOptions() {
   return {
     language: WIDGET_LANGUAGE,
+    branding: buildWidgetBranding(),
     ...widgetCallbacks,
   };
 }
